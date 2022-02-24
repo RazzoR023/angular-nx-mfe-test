@@ -54,7 +54,7 @@ AppModule = (0, tslib_1.__decorate)([
         imports: [
             // BEGIN INSERT
             serve_static_1.ServeStaticModule.forRoot({
-                rootPath: (0, path_1.join)(__dirname, '..', 'dashboard'),
+                rootPath: (0, path_1.join)(__dirname, '..', 'login'),
                 exclude: ['/api*']
             })
             // END INSERT
