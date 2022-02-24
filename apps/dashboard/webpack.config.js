@@ -46,7 +46,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       remotes: {
-        login: path.join(__dirname, '..', 'login/remoteEntry.js'),
+        login: 'https://mfe-login-test.herokuapp.com/remoteEntry.js',
       },
       shared: share({
         '@angular/core': {
