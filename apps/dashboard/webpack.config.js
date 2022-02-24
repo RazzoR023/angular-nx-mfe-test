@@ -46,7 +46,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       remotes: {
-        login: join(__dirname, '..', 'login/remoteEntry.js'),
+        login: path.join(__dirname, '..', 'login/remoteEntry.js'),
       },
       shared: share({
         '@angular/core': {
