@@ -15,11 +15,7 @@ import { loadRemoteModule } from '@angular-architects/module-federation';
         {
           path: 'login',
           loadChildren: () =>
-            loadRemoteModule({
-              remoteEntry: 'http://localhost:3000/remoteEntry.js',
-              exposedModule: './Module',
-              remoteName: '',
-            }),
+          import('login/Module').then((m) => m.RemoteEntryModule),
         },
       ],
       { initialNavigation: 'enabledBlocking' }

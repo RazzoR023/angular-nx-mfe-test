@@ -5,6 +5,7 @@
     "dashboard-e2e": "apps/dashboard-e2e",
     "login": "apps/login",
     "login-e2e": "apps/login-e2e",
+    "my-nest-app": "apps/my-nest-app",
     "shared-data-access-user": "libs/shared/data-access-user",
     "shared-shared-table": "libs/shared/shared-table"
   }
