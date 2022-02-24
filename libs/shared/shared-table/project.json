@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/shared-table",
+  "sourceRoot": "libs/shared/shared-table/src",
+  "prefix": "ng-mfe",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/shared-table"],
+      "options": {
+        "jestConfig": "libs/shared/shared-table/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/shared-table/src/**/*.ts",
+          "libs/shared/shared-table/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
